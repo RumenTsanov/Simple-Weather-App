@@ -1,0 +1,10 @@
+<div class="container">
+    <header class="header">
+        <img class="logo" src="weather.png" alt="logo">
+    </header>
+    <form class="startPage-form">
+        <p>Enter name of a city and press search:</p>
+        <input [(ngModel)]="city" class="search-input" type="text" name="city">
+        <button routerLink="/forecast" class="search-btn" type="button" (click)="getCity()">Search</button>
+    </form>
+</div>

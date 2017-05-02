@@ -1,0 +1,126 @@
+.container {
+    width: 1024px;
+    background-color: #FFFFFF;
+    margin-left: 12%;
+    position: absolute;
+    padding-bottom: 150px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.header {
+    padding-top: 30px;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
+.info-left {
+    display: inline;
+    float: left;
+    margin-left: 65px;
+}
+
+.info-right {
+    display: inline;
+    float: right;
+    margin-right: 65px;
+}
+
+.first-row {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.second-row {
+    font-size: 25px;
+}
+
+.info-temp>img {
+    width: 55px;
+    height: 40px;
+}
+
+.table-container {
+    display: block;
+    position: relative;
+    margin-top: 21%;
+    margin-left: 25%;
+}
+
+.today-btn {
+    text-decoration: none;
+    border: 1px solid #B9B9B9;
+    padding: 10px 105px 10px 105px;
+    font-size: 15px;
+    color: black;
+    border-right: none;
+    margin-right: -5px;
+}
+
+.hours-btn {
+    text-decoration: none;
+    border: 1px solid #B9B9B9;
+    padding: 10px 70px 10px 70px;
+    font-size: 15px;
+    color: black;
+}
+
+.table-1 {
+    padding: 30px 285px 100px 25px;
+    /*display: none;*/
+}
+
+.table-1>p {
+    margin-bottom: 35px;
+}
+
+.table-1>p>span {
+    font-size: 30px;
+}
+
+.table-info-right {
+    float: right;
+}
+
+.table-2 {
+    margin-left: -50px;
+    margin-top: 35px;
+}
+
+.info-hours {
+    position: relative;
+    border-bottom: 1px solid #666666;
+    width: 75%;
+    margin-bottom: -15px;
+}
+
+.hours-left {
+    display: inline;
+}
+
+.hours-right {
+    float: right;
+    margin-top: -75px;
+    text-align: right;
+}
+
+.first-row-table {
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+.second-row-table {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.first-row-table>img {
+    width: 25px;
+}

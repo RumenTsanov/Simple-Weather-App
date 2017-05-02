@@ -1,0 +1,45 @@
+<div class="container">
+    <header class="header">
+        <img class="logo" src="../../resources/logo.jpg">
+    </header>
+    <div class="info">
+        <div class="info-left">
+            <p class="city-name first-row">{{location.name}}</p>
+            <p class="date second-row">{{current.last_updated}}</p>
+        </div>
+        <div class="info-right">
+            <p class="info-temp first-row"><img src="{{current.condition.icon}}">{{current.temp_c}}</p>
+            <p class="info-text second-row">{{current.condition.text}}</p>
+        </div>
+    </div>
+    <div class="table-container">
+        <p class="table-head"><span class="today-btn" (click)="showClass = false" (click)="showClass1 = true">Today</span>
+            <span class="hours-btn" (click)="showClass1 = false" (click)="showClass = true">48 Hours Forecast</span></p>
+        <div class="table-1" [ngClass]="{ 'hidden': showClass }">
+            <p>
+                <span>Feels like</span>
+                <span class="table-info-right">{{current.feelslike_c}}</span>
+            </p>
+            <p>
+                <span>Wind</span>
+                <span class="table-info-right">{{current.wind_kph}}</span>
+            </p>
+            <p>
+                <span>Humidity</span>
+                <span class="table-info-right">{{current.humidity}}</span>
+            </p>
+        </div>
+        <div class="table-2" [ngClass]="{ 'hidden': showClass1 }">
+            <div class="info-hours" *ngFor="let hours of forecastDay">
+                <div class="hours-left">
+                    <p class="first-row-table">{{hours.time | date: 'shortTime'}}</p>
+                    <p class="second-row-table">{{forecast.forecastday[0].date}}</p>
+                </div>
+                <div class="hours-right">
+                    <p class="first-row-table"><img src="{{hours.condition.icon}}">{{hours.temp_c}}</p>
+                    <p class="second-row-table">{{hours.condition.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
